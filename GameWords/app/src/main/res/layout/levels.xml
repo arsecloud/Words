@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="5">
+    android:weightSum="3">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,45 +13,15 @@
 
         android:weightSum="1">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/logo" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="@color/colorPrimaryDark"
-        android:orientation="horizontal"
-        >
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:id="@+id/points"
-
-    />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="@color/colorPrimaryDark"
-        android:orientation="horizontal"
-
-        android:weightSum="1"
-        >
-
         <Button
-            android:id="@+id/but1"
+            android:id="@+id/easy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_weight="1"
             android:background="@color/out"
-            android:onClick="classic"
-            android:text="Одиночная игра" />
+            android:onClick="onClickSet"
+            android:text="Легко" />
     </LinearLayout>
 
     <LinearLayout
@@ -65,14 +34,16 @@
 
 
         <Button
-            android:id="@+id/but2"
+            android:id="@+id/middle"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@color/out"
             android:gravity="center"
-            android:text="Игра по сети" />
+            android:onClick="onClickSet1"
+            android:text="Средне" />
 
     </LinearLayout>
 
@@ -84,14 +55,14 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/but3"
+            android:id="@+id/high"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:background="@color/out"
             android:gravity="center"
-            android:onClick="set"
-
-            android:text="Настройки" />
+            android:onClick="onClickSet2"
+            android:text="Сложно" />
     </LinearLayout>
 </LinearLayout>
